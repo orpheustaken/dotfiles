@@ -1,0 +1,2 @@
+#!/bin/sh
+java -Xmx1600M -Dcom.android.uiautomator.bindir="$ANDROID_HOME/tools" -cp "$ANDROID_HOME/tools/lib/x86_64/swt.jar":"$ANDROID_HOME/tools/lib/*" com.android.uiautomator.UiAutomatorViewer

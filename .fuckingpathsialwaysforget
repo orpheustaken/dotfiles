@@ -1,0 +1,8 @@
+## gtk themes
+/usr/share/themes/Material-Black-Blueberry-3.38
+/usr/share/gtk-3.0/settings.ini
+/usr/share/gtk-2.0/gtkrc
+
+## fixing some java config bullshit
+# https://issuetracker.google.com/issues/36975466
+# helpful wiki pages: java, environment variables, android
