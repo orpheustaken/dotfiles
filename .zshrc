@@ -16,3 +16,7 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
 # alias
 alias fuck='shutdown -P now'
+alias up='sudo pacman -Syu'
+alias ins='sudo pacman -S'
+alias rem='sudo pacman -Rcns'
+alias clearsys='sudo pacman -Sc && rm -rf ~/.cache/* && sudo rm -rf /root/.cache/* && sudo rm -rf /tmp/*'
