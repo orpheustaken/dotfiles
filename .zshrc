@@ -1,7 +1,7 @@
 # oh-my-zsh shit, yes i'm too lazy to manually configure my zsh
 export ZSH="/home/user/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-plugins=(git zsh-syntax-highlighting adb)
+ZSH_THEME="refined"
+plugins=(zsh-syntax-highlighting colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # android shit
