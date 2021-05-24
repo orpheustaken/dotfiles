@@ -7,6 +7,7 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 ## DWM patches
 * fullgaps
 * notitle
+* hide vacant tags
 
 ## ST patches
 * alpha
