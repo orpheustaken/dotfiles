@@ -6,12 +6,12 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 
 
 ## DWM patches
-* fullgaps
-* notitle
-* hide vacant tags
+* [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
+* [notitle](https://dwm.suckless.org/patches/notitle/)
+* [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/)
 
 ## ST patches
-* alpha
+* [alpha](https://st.suckless.org/patches/alpha/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
