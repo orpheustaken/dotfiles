@@ -4,11 +4,11 @@
 # display resolution
 
 # single monitor
-# xrandr --output eDP --scale 1.405563689x1.40625 --panning 1920x1080 &
+  xrandr --output eDP --scale 1.405563689x1.40625 --panning 1920x1080 &
 
 # dual monitor
-  xrandr --output HDMI-A-0 --rotate right
-  xrandr --output eDP --scale 1.405563689x1.40625 --panning 1920x1080+1280+0
+# xrandr --output HDMI-A-0 --rotate right
+# xrandr --output eDP --scale 1.405563689x1.40625 --panning 1920x1080+1280+0
 
 # wallpaper
   feh --no-fehbg --bg-fill '/home/user/Documents/Images/wallpaper.png' &
