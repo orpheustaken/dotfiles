@@ -1,32 +1,30 @@
-/* See LICENSE file for copyright and license details. */
-
 #include <X11/XF86keysym.h>
 
 // volume keys
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+
 // brightness keys
 static const char *brightnessup[] = { "sudo", "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] = { "sudo", "xbacklight", "-dec", "5", NULL };
+
 /* appearance */
 static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+
 static const char *fonts[]          = { "hack:size=12" };
 static const char dmenufont[]       = "hack:size=12";
-// background color
-static const char col_gray1[]       = "#040404";
-// inactive window border color
-static const char col_gray2[]       = "#000000";
-// font color
-static const char col_gray3[]       = "#bbbbbb";
-// current tag and current window font color
-static const char col_gray4[]       = "#eeeeee";
-// top bar second color and active window border color
-static const char col_cyan[]        = "#040404";
+
+static const char col_gray1[]       = "#040404"; // background color
+static const char col_gray2[]       = "#000000"; // inactive window border color
+static const char col_gray3[]       = "#bbbbbb"; // font color
+static const char col_gray4[]       = "#eeeeee"; // current tag and current window font color
+static const char col_cyan[]        = "#040404"; // top bar second color and active window border color
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -34,7 +32,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -80,8 +78,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F9,  	spawn, 		{.v = mutevol } },
 	{ MODKEY,                       XK_F11, 	spawn, 		{.v = upvol   } },
 	
-	{ MODKEY,			XK_F4,		spawn,		{.v = brightnessup} },
-	{ MODKEY,			XK_F3,		spawn,		{.v = brightnessdown} },
+	{ MODKEY,			            XK_F4,		spawn,		{.v = brightnessup} },
+	{ MODKEY,			            XK_F3,		spawn,		{.v = brightnessdown} },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
