@@ -1,11 +1,11 @@
 #include <X11/XF86keysym.h>
 
-// volume keys
+// volume control
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
-// brightness keys
+// brightness control
 static const char *brightnessup[] = { "sudo", "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] = { "sudo", "xbacklight", "-dec", "5", NULL };
 
