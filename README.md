@@ -9,6 +9,9 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 * [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
 * [notitle](https://dwm.suckless.org/patches/notitle/)
 * [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/)
+* [alwayscenter](https://dwm.suckless.org/patches/alwayscenter/)
+* [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
+* [pertag](https://dwm.suckless.org/patches/pertag)
 
 ## ST patches
 * [alpha](https://st.suckless.org/patches/alpha/)
