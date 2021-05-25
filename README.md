@@ -13,6 +13,11 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 * [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
 * [pertag](https://dwm.suckless.org/patches/pertag)
 
+I do not use multi-monitor anymore, but, if I were to, I would certainly add the following patches:
+
+* [statusallmons](https://dwm.suckless.org/patches/statusallmons/)
+* [warp](https://dwm.suckless.org/patches/warp/)
+
 ## ST patches
 * [alpha](https://st.suckless.org/patches/alpha/)
 
