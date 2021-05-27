@@ -10,11 +10,7 @@ dwm_pulse () {
     VOL=$(pamixer --get-volume-human)
     
     printf "%s" "$SEP1"
-        if [ "$VOL" = "muted" ] || [ "$VOL" -eq 0 ]; then
-            printf ""
-        else
             printf " %s" "$VOL"
-        fi
 }
 
 dwm_pulse
