@@ -22,12 +22,12 @@ export SEP1="  "
 # export SEP2="]"
 
 # Import the modules
-. "$DIR/bar-functions/dwm_transmission.sh"
+# . "$DIR/bar-functions/dwm_transmission.sh"
 . "$DIR/bar-functions/dwm_resources.sh"
-. "$DIR/bar-functions/dwm_battery.sh"
+# . "$DIR/bar-functions/dwm_battery.sh"
 . "$DIR/bar-functions/dwm_backlight.sh"
 . "$DIR/bar-functions/dwm_pulse.sh"
-. "$DIR/bar-functions/dwm_networkmanager.sh"
+# . "$DIR/bar-functions/dwm_networkmanager.sh"
 . "$DIR/bar-functions/dwm_date.sh"
 
 parallelize() {
