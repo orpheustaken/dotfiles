@@ -2,6 +2,8 @@
 
 The main purpose of this repository is to be a personal backup of my setup in case I need to rebuild my system somewhere else. However, feel free to clone and use it at your disposal.
 
+From personal experience, be sure to see the [packages list](https://github.com/orpheustaken/dotfiles/tree/master/packages) and install any possible dependency before trying to compile or run any of these files, otherwise you may get errors or missing features.
+
 ![print2](https://user-images.githubusercontent.com/63078965/119282324-cda83a00-bc28-11eb-8e13-638758ec2243.png)
 
 
