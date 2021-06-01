@@ -33,6 +33,7 @@ alias cp='cp -i'
 
 alias tsm='transmission-remote'
 
+alias clone='git clone'
 alias status='git status'
 alias gdiff='git diff'
 alias add='git add'
