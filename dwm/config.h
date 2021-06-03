@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
@@ -51,8 +51,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ " ",      tile },    /* first entry is default */
+	{ "[F]",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
@@ -78,8 +78,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F9,  	spawn, 		{.v = mutevol } },
 	{ MODKEY,                       XK_F11, 	spawn, 		{.v = upvol   } },
 	
-	{ MODKEY,			            XK_F4,		spawn,		{.v = brightnessup} },
-	{ MODKEY,			            XK_F3,		spawn,		{.v = brightnessdown} },
+	{ MODKEY,                       XK_F4,		spawn,		{.v = brightnessup} },
+	{ MODKEY,                       XK_F3,		spawn,		{.v = brightnessdown} },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
