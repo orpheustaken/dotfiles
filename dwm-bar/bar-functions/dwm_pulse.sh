@@ -10,7 +10,7 @@ dwm_pulse () {
     VOL=$(pamixer --get-volume-human)
     
     printf "%s" "$SEP1"
-            printf " %s" "$VOL"
+            printf "%s" "$VOL"
 }
 
 dwm_pulse
