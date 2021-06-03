@@ -4,8 +4,7 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 
 From personal experience, be sure to see the [packages list](https://github.com/orpheustaken/dotfiles/tree/master/packages) and install any possible dependency before trying to compile or run any of these files, otherwise you may get errors or missing features.
 
-![print2](https://user-images.githubusercontent.com/63078965/119282324-cda83a00-bc28-11eb-8e13-638758ec2243.png)
-
+![print3](https://user-images.githubusercontent.com/63078965/120683141-cab11300-c48c-11eb-9732-b9e55f053875.png)
 
 ## DWM patches
 * [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
