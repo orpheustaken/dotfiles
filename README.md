@@ -21,6 +21,7 @@ I do not use multi-monitor anymore, but, if I were to, I would certainly add the
 
 ## ST patches
 * [alpha](https://st.suckless.org/patches/alpha/)
+* [anysize](https://st.suckless.org/patches/anysize/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
