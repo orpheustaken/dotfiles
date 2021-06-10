@@ -12,7 +12,7 @@ From personal experience, be sure to see the [packages list](https://github.com/
 * [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/)
 * [alwayscenter](https://dwm.suckless.org/patches/alwayscenter/)
 * [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
-* [pertag](https://dwm.suckless.org/patches/pertag)
+* ~~[pertag](https://dwm.suckless.org/patches/pertag)~~ _removed_
 
 I do not use multi-monitor anymore, but, if I were to, I would certainly add the following patches:
 
