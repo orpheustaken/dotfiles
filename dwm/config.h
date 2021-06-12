@@ -1,14 +1,5 @@
 #include <X11/XF86keysym.h>
 
-// volume control
-static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
-
-// brightness control
-static const char *brightnessup[] = { "sudo", "xbacklight", "-inc", "5", NULL };
-static const char *brightnessdown[] = { "sudo", "xbacklight", "-dec", "5", NULL };
-
 /* appearance */
 static const unsigned int borderpx  = 5;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -31,6 +22,7 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
+
 /* tagging */
 static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 
@@ -41,8 +33,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       0,            0,           -1 },
 };
+
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
@@ -56,6 +49,7 @@ static const Layout layouts[] = {
 	{ "[M]",      monocle },
 };
 
+
 /* key definitions */
 #define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
@@ -64,22 +58,35 @@ static const Layout layouts[] = {
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
+
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+static const char *screenshot[] = { "/usr/bin/scrot", "-q", "100", "/home/user/Documents/Images/new_print.png", NULL };
+
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+
+static const char *brightnessup[] = { "sudo", "xbacklight", "-inc", "5", NULL };
+static const char *brightnessdown[] = { "sudo", "xbacklight", "-dec", "5", NULL };
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_F10,		spawn, 		{.v = downvol } },
-	{ MODKEY,                       XK_F9,  	spawn, 		{.v = mutevol } },
-	{ MODKEY,                       XK_F11, 	spawn, 		{.v = upvol   } },
-	
-	{ MODKEY,                       XK_F4,		spawn,		{.v = brightnessup} },
-	{ MODKEY,                       XK_F3,		spawn,		{.v = brightnessdown} },
+    { MODKEY,                       XK_F1,      spawn,          {.v = screenshot } },
+
+	{ MODKEY,                       XK_F10,     spawn,          {.v = downvol } },
+	{ MODKEY,                       XK_F9,      spawn,          {.v = mutevol } },
+	{ MODKEY,                       XK_F11,     spawn,          {.v = upvol   } },
+
+	{ MODKEY,                       XK_F4,      spawn,          {.v = brightnessup} },
+	{ MODKEY,                       XK_F3,      spawn,          {.v = brightnessdown} },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
@@ -118,6 +125,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
+
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
