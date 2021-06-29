@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles Overview
 
 The main purpose of this repository is to be a personal backup of my setup in case I need to rebuild my system somewhere else. However, feel free to clone and use it at your disposal.
 
