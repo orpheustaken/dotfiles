@@ -41,3 +41,5 @@ alias add='git add'
 alias commit='git commit -m'
 alias pull='git pull'
 alias push='git pull && git push'
+
+alias key='xset r rate 300 50 && setxkbmap br'
