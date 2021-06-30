@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Author: Matheus Vinicius <matheusvinicius7000@gmail.com>
+
+# List of packages to be installed
+PACKAGES=(
+
+vim
+neofetch
+cmatrix
+
+)
+
+for (( i = 0; i < ${#PACKAGES[@]}; i++ ))
+do
+    package=${PACKAGES[$i]}
+    
+    if [ "$EUID" -ne 0 ]
+    then
+        echo 'Y' | sudo pacman -S $package
+    else
+        echo 'Y' | pacman -S $package
+    fi
+
+done
