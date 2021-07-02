@@ -4,7 +4,16 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 
 ![print3](https://user-images.githubusercontent.com/63078965/120683141-cab11300-c48c-11eb-9732-b9e55f053875.png)
 
-From personal experience, be sure to see the [packages list](https://github.com/orpheustaken/dotfiles/tree/master/packages) and install any possible dependency before trying to compile or run any of these files, otherwise you may get errors or missing features.
+## Packages and Dependencies
+From personal experience, be sure to see the [packages list](https://github.com/orpheustaken/dotfiles/tree/master/packages) and install any possible dependency before trying to compile or run any of these files, otherwise you may get errors or/and missing features.
+
+### Arch Linux
+There is a shell script to automate this process for those _wise enough_ to use Arch:
+```bash
+cd scripts/
+./install_packages
+```
+By default, only the necessary dependencies for the dotfiles are going to be installed, if you desire to install any extra package, uncomment those available or add your preferred ones.
 
 ## DWM patches
 * [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
