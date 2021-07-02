@@ -15,7 +15,7 @@ cd scripts/
 ```bash
 ./install_packages
 ```
-By default, only the necessary dependencies for the dotfiles are going to be installed, if you desire to install any extra package, uncomment those available or add your preferred ones.
+By default, only the dependencies for the dotfiles are going to be installed, however if you desire to install extra packages, uncomment those available or add your preferred ones.
 
 ## DWM patches
 * [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
