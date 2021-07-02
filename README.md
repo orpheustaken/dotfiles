@@ -11,6 +11,8 @@ From personal experience, be sure to see the [packages list](https://github.com/
 There is a shell script to automate this process for those _wise enough_ to use Arch:
 ```bash
 cd scripts/
+```
+```bash
 ./install_packages
 ```
 By default, only the necessary dependencies for the dotfiles are going to be installed, if you desire to install any extra package, uncomment those available or add your preferred ones.
