@@ -12,7 +12,7 @@ There is a shell script to automate this process for those on Arch:
 ```bash
 cd scripts/
 ```
-You *must* be root to run the script.
+You **must** be root to run the script.
 ```bash
 ./install_packages
 ```
