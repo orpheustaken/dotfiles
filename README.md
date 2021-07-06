@@ -8,10 +8,11 @@ The main purpose of this repository is to be a personal backup of my setup in ca
 From personal experience, be sure to see the [packages list](https://github.com/orpheustaken/dotfiles/tree/master/packages) and install any possible dependency before trying to compile or run any of these files, otherwise you may get errors or/and missing features.
 
 ### Arch Linux
-There is a shell script to automate this process for those _wise enough_ to use Arch:
+There is a shell script to automate this process for those on Arch:
 ```bash
 cd scripts/
 ```
+You *must* be root to run the script.
 ```bash
 ./install_packages
 ```
