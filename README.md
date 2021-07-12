@@ -33,4 +33,3 @@ I do not use multi-monitor anymore, but, if I were to, I would certainly add the
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
