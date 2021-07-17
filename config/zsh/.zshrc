@@ -24,7 +24,7 @@ alias fuck='shutdown -P now'
 alias up='sudo pacman -Syu'
 alias ins='sudo pacman -S'
 alias rem='sudo pacman -Rcns'
-alias clearsys='sudo pacman -Sc && yay -Sc && rm -rf ~/.cache/* && sudo rm -rf /tmp/*'
+alias clearsys='$HOME/Scripts/clear'
 
 alias ..='cd ..'
 alias mv='mv -i'
