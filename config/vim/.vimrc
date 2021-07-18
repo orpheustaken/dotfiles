@@ -24,3 +24,6 @@ packadd! dracula
 syntax enable
 colorscheme dracula
 hi! Normal ctermbg=NONE
+
+nnoremap <C-j> :tabprevious<CR>
+nnoremap <C-k> :tabnext<CR>
