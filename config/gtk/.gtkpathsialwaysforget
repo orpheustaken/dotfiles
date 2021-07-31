@@ -1,0 +1,14 @@
+/usr/share/themes/Material-Black-Blueberry-3.38
+/usr/share/icons/Adwaita
+
+/usr/share/gtk-3.0/settings.ini
+/usr/share/gtk-2.0/gtkrc
+
+
+GTK 2 user specific: ~/.gtkrc-2.0
+
+GTK 2 system wide: /etc/gtk-2.0/gtkrc
+
+GTK 3 user specific: $XDG_CONFIG_HOME/gtk-3.0/settings.ini, or $HOME/.config/gtk-3.0/settings.ini if $XDG_CONFIG_HOME is not set
+
+GTK 3 system wide: /etc/gtk-3.0/settings.ini
