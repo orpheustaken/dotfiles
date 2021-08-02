@@ -69,6 +69,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 
 static const char *screenshot[] = { "/usr/bin/scrot", "-q", "100", "/home/user/Documents/Images/new_print.png", NULL };
+static const char *key[]        = { "/home/user/Scripts/key", NULL };
 
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
@@ -77,12 +78,13 @@ static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "togg
 static const char *brightnessup[]   =   { "sudo", "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] =   { "sudo", "xbacklight", "-dec", "5", NULL };
 
-static const char *key[] = { "/home/user/Scripts/key", NULL };
+static const char *firefox[] = { "/usr/bin/firefox", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-    { MODKEY,                       XK_F2,      spawn,          {.v = key} },
+    { MODKEY,                       XK_a,       spawn,          {.v = firefox} },
 
+    { MODKEY,                       XK_F2,      spawn,          {.v = key} },
     { MODKEY,                       XK_F1,      spawn,          {.v = screenshot } },
 
 	{ MODKEY,                       XK_F10,     spawn,          {.v = downvol } },
