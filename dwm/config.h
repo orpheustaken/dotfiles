@@ -74,11 +74,15 @@ static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%"
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
-static const char *brightnessup[] = { "sudo", "xbacklight", "-inc", "5", NULL };
-static const char *brightnessdown[] = { "sudo", "xbacklight", "-dec", "5", NULL };
+static const char *brightnessup[]   =   { "sudo", "xbacklight", "-inc", "5", NULL };
+static const char *brightnessdown[] =   { "sudo", "xbacklight", "-dec", "5", NULL };
+
+static const char *key[] = { "/home/user/Scripts/key", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+    { MODKEY,                       XK_F2,      spawn,          {.v = key} },
+
     { MODKEY,                       XK_F1,      spawn,          {.v = screenshot } },
 
 	{ MODKEY,                       XK_F10,     spawn,          {.v = downvol } },
