@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 5;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 20;       /* snap pixel */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -78,10 +78,12 @@ static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "togg
 static const char *brightnessup[]   =   { "sudo", "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] =   { "sudo", "xbacklight", "-dec", "5", NULL };
 
-static const char *firefox[] = { "/usr/bin/firefox", NULL };
+static const char *firefox[]    = { "/usr/bin/firefox",     NULL };
+static const char *chromium[]   = { "/usr/bin/chromium",    NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+    { MODKEY,                       XK_s,       spawn,          {.v = chromium} },
     { MODKEY,                       XK_a,       spawn,          {.v = firefox} },
 
     { MODKEY,                       XK_F2,      spawn,          {.v = key} },
