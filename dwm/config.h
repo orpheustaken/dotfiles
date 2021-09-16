@@ -68,6 +68,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+static const char *screenshotselect[] = { "/usr/bin/scrot", "-q", "100", "-s", "/home/user/Documents/Images/new_print_selection.png", NULL };
+
 static const char *screenshot[] = { "/usr/bin/scrot", "-q", "100", "/home/user/Documents/Images/new_print.png", NULL };
 static const char *key[]        = { "/home/user/Scripts/key", NULL };
 
@@ -86,7 +88,9 @@ static Key keys[] = {
     { MODKEY,                       XK_s,       spawn,          {.v = chromium} },
     { MODKEY,                       XK_a,       spawn,          {.v = firefox} },
 
-    { MODKEY,                       XK_F2,      spawn,          {.v = key} },
+    { MODKEY,                       XK_F3,      spawn,          {.v = key} },
+
+    { MODKEY,                       XK_F2,      spawn,          {.v = screenshotselect } },
     { MODKEY,                       XK_F1,      spawn,          {.v = screenshot } },
 
 	{ MODKEY,                       XK_F10,     spawn,          {.v = downvol } },
