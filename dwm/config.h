@@ -88,7 +88,7 @@ static Key keys[] = {
     { MODKEY,                       XK_s,       spawn,          {.v = chromium} },
     { MODKEY,                       XK_a,       spawn,          {.v = firefox} },
 
-    { MODKEY,                       XK_F3,      spawn,          {.v = key} },
+    { MODKEY,                       XK_F5,      spawn,          {.v = key} },
 
     { MODKEY,                       XK_F2,      spawn,          {.v = screenshotselect } },
     { MODKEY,                       XK_F1,      spawn,          {.v = screenshot } },
