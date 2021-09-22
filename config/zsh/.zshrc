@@ -8,13 +8,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 export BROWSER='firefox'
 
-# android shit
-export ANDROID_HOME=$HOME/Android/Sdk
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
 # java shit
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
@@ -27,9 +20,6 @@ alias rem='sudo pacman -Rcns'
 alias clearsys='$HOME/Scripts/clear'
 
 alias ..='cd ..'
-alias mv='mv -i'
-alias rm='rm -i'
-alias cp='cp -i'
 
 alias tsm='transmission-remote'
 
@@ -41,5 +31,4 @@ alias add='git add'
 alias commit='git commit -m'
 alias pull='git pull'
 alias push='git pull && git push'
-
-alias key='xset r rate 300 50 && setxkbmap br'
+alias greset='git reset'
