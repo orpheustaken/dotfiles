@@ -15,7 +15,7 @@
    sleep 1 &&
 
 ## wallpaper
-   feh --no-fehbg --bg-fill '/home/user/Documents/Images/plato.jpg' &
+   feh --no-fehbg --bg-fill '/home/user/Documents/Images/zeno_of_citium.jpg' &
 
 ## increase speed when holding a key
    xset r rate 300 50 &
