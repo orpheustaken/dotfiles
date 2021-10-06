@@ -60,6 +60,7 @@ PACKAGES=( # list of packages to be installed
 
 # pcmanfm               # lightweight gui file manager
 # ranger                # cli file manager written in python
+# tree                  # print file structure tree -d path
 # rsync
 
 
