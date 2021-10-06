@@ -8,8 +8,9 @@ set shiftwidth=4
 set expandtab
 set smartindent autoindent
 
-set relativenumber
 set nu
+set relativenumber
+
 set noerrorbells
 set nowrap
 set signcolumn=yes
@@ -32,19 +33,22 @@ set sidescrolloff=15
 set updatetime=100
 
 set list
-set listchars=tab:>·,trail:·                            " place a dot when is lost space and the line below removes them
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
 set wildmenu                                            " increment :e to search and open a file
 set ttyfast                                             " smoothness
 
-packadd! dracula
-syntax enable
-colorscheme dracula
-hi! Normal ctermbg=NONE
-
 set cul                                                 " highlight current line
 hi cursorline term=none cterm=none ctermbg=234
+
+" set listchars=tab:>·,trail:·                            " place a dot when is lost space and the line below removes them
+" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
+" set laststatus=2                                        " status bar and the line below save the last cursor position
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+packadd! onedark
+syntax enable
+colorscheme onedark
+hi! Normal ctermbg=none
 
 nnoremap <C-j> :tabprevious<CR>
 nnoremap <C-k> :tabnext<CR>

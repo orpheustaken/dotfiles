@@ -1,0 +1,101 @@
+.vim
+├── pack
+│   ├── plugins
+│   │   └── start
+│   │       ├── nerdtree
+│   │       │   ├── autoload
+│   │       │   │   └── nerdtree
+│   │       │   ├── doc
+│   │       │   ├── lib
+│   │       │   │   └── nerdtree
+│   │       │   ├── nerdtree_plugin
+│   │       │   ├── plugin
+│   │       │   └── syntax
+│   │       ├── vim-gitgutter
+│   │       │   ├── autoload
+│   │       │   │   └── gitgutter
+│   │       │   ├── doc
+│   │       │   ├── plugin
+│   │       │   └── test
+│   │       └── vim-polyglot
+│   │           ├── after
+│   │           │   ├── compiler
+│   │           │   ├── ftplugin
+│   │           │   ├── indent
+│   │           │   └── syntax
+│   │           │       ├── javascript
+│   │           │       ├── javascriptreact
+│   │           │       ├── php
+│   │           │       ├── reason
+│   │           │       ├── typescript
+│   │           │       ├── typescriptreact
+│   │           │       └── vue
+│   │           ├── autoload
+│   │           │   ├── cargo
+│   │           │   ├── crystal
+│   │           │   ├── db
+│   │           │   │   └── adapter
+│   │           │   ├── elixir
+│   │           │   ├── go
+│   │           │   ├── jsx_pretty
+│   │           │   ├── julia
+│   │           │   ├── polyglot
+│   │           │   ├── puppet
+│   │           │   ├── python
+│   │           │   ├── rust
+│   │           │   ├── smt2
+│   │           │   ├── vital
+│   │           │   │   └── _crystal
+│   │           │   │       ├── Data
+│   │           │   │       └── Web
+│   │           │   ├── xml
+│   │           │   └── zig
+│   │           ├── compiler
+│   │           ├── ctags
+│   │           ├── doc
+│   │           ├── extras
+│   │           ├── ftdetect
+│   │           ├── ftplugin
+│   │           │   ├── cryptol
+│   │           │   ├── rust
+│   │           │   ├── scala
+│   │           │   └── svelte
+│   │           ├── indent
+│   │           ├── plugin
+│   │           ├── scripts
+│   │           ├── syntax
+│   │           │   ├── basic
+│   │           │   ├── html
+│   │           │   ├── javascript
+│   │           │   └── yats
+│   │           └── tests
+│   │               └── indent
+│   │                   ├── 2.1
+│   │                   └── 4.1
+│   └── themes
+│       └── start
+│           ├── dracula
+│           │   ├── after
+│           │   │   ├── plugin
+│           │   │   └── syntax
+│           │   ├── autoload
+│           │   │   ├── airline
+│           │   │   │   └── themes
+│           │   │   └── lightline
+│           │   │       └── colorscheme
+│           │   ├── colors
+│           │   └── doc
+│           └── onedark
+│               ├── autoload
+│               │   ├── airline
+│               │   │   └── themes
+│               │   └── lightline
+│               │       └── colorscheme
+│               ├── build
+│               │   └── templates
+│               ├── colors
+│               ├── img
+│               └── term
+└── undodir
+
+98 directories
