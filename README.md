@@ -1,7 +1,7 @@
 # Dotfiles Overview
 The main purpose of this repository is to be a personal backup of my setup in case I need to rebuild my system somewhere else. However, feel free to clone and use it at your disposal.
 
-![print5](https://user-images.githubusercontent.com/63078965/137219245-94bfd290-556a-4184-a3ad-ed3ffe248e26.png)
+![print6](https://user-images.githubusercontent.com/63078965/137253318-effa4522-b2b2-4e5f-9fa5-f5c32c4e1ed0.png)
 
 ## Packages and Dependencies
 From personal experience, be sure to see the [packages list](https://github.com/orpheustaken/dotfiles/tree/master/packages) and install any possible dependency before trying to compile or run any of these files, otherwise you may get errors or/and missing features.
