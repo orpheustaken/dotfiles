@@ -24,6 +24,7 @@ alias ..='cd ..'
 alias tsm='transmission-remote'
 
 alias clone='git clone'
+alias branch='git branch'
 alias checkout='git checkout'
 alias restore='git restore'
 alias status='git status'
