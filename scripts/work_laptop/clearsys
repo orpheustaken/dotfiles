@@ -3,5 +3,5 @@
 rm -rf $HOME/.cache/*
 rm -rf /tmp/*
 
-echo 'Cache files deleted from HOME folder.'
+echo 'Cache files deleted from HOME and TMP directories.'
 
