@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm -rf $HOME/.cache/*
+rm -rf /tmp/*
+
+echo 'Cache files deleted from HOME folder.'
+
