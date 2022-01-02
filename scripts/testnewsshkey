@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo 'First commit of 2022!'
+
