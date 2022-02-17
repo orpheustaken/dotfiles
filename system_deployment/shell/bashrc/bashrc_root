@@ -1,0 +1,25 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+## Prompt Settings
+# PS1='\w\n> '                            # Basic prompt
+
+PS1='\[\033[01;90m\]\w _ \d \A\[\033[00m\]\n\u # '
+
+## History Settings
+HISTCONTROL=ignoredups:ignorespace
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+## Binds
+bind 'set completion-ignore-case on'      # Case-insensitive tab-completion
+
+bind '"\e[A": history-search-backward'    # Incremental history search, like zsh
+bind '"\eOA": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\eOB": history-search-forward'
+
+## Aliases
+alias ls='ls --color=auto'
+alias lh='ls -d .*'                       # Show only hidden files
+

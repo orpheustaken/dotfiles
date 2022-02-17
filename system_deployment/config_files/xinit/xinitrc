@@ -1,0 +1,13 @@
+setxkbmap br &
+xset r rate 200 50 &
+
+unclutter --timeout 1 &
+numlockx &
+
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519 &
+
+feh --no-fehbg --bg-fill ~/Documents/Images/Wallpapers/grey_bird.jpg &
+/usr/src/dwm-bar/dwm_bar.sh &
+
+exec dwm
+

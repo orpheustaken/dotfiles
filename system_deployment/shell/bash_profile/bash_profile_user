@@ -1,0 +1,11 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Environment Variables
+export PATH=$PATH:/home/user/Applications
+
+startx
+

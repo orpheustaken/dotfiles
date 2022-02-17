@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Vim setup.
+
+mkdir .vim
+
+mkdir .vim/pack
+mkdir .vim/undodir
+
+mkdir .vim/pack/plugins
+mkdir .vim/pack/plugins/start
+mkdir .vim/pack/themes
+mkdir .vim/pack/themes/start
+
+cd .vim/pack/plugins/start
+
+git clone --depth 1 https://github.com/preservim/nerdtree
+git clone --depth 1 https://github.com/airblade/vim-gitgutter
+git clone --depth 1 https://github.com/sheerun/vim-polyglot
+
+cd .vim/pack/themes/start
+
+git clone --depth 1 https://github.com/joshdick/onedark.vim
+mv onedark.vim/ onedark/
+
+cp Projects/dotfiles/config/vim/vimrc ~
+mv vimrc .vimrc
+
