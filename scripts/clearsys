@@ -1,7 +1,0 @@
-#!/bin/sh
-
-echo 'Y' | sudo pacman -Sc
-echo 'Y' | yay -Sc
-echo 'Y' | sudo rm -rf /tmp/*
-
-rm -rf $HOME/.cache/*

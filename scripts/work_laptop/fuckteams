@@ -1,7 +1,0 @@
-#!/bin/sh
-
-rm -rf $HOME/.config/Microsoft*
-rm -rf $HOME/.config/teams*
-
-echo 'Microshit Teams successfully fucked.'
-

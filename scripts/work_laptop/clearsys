@@ -1,7 +1,0 @@
-#!/bin/sh
-
-rm -rf /home/user/.cache/*
-rm -rf /tmp/*
-
-echo 'Cache files deleted from HOME and TMP directories.'
-

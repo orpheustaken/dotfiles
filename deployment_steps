@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Clean install of Arch with Doas instead of Sudo, NetworkManager, Vim and Git.
 
 doas pacman -S base-devel --ignore sudo
