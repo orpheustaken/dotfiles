@@ -10,7 +10,7 @@ As of now, 21 April 2022, I'm just using Gnome 42, which is great, with Arch. Bu
 ![print6](https://user-images.githubusercontent.com/63078965/137253318-effa4522-b2b2-4e5f-9fa5-f5c32c4e1ed0.png)
 
 ### Arch Linux
-There was supposed to be a script for deployment on Arch Linux, but I'm too lazy.
+There were supposed to be a script for deployment on Arch Linux, but I'm too lazy.
 
 ### DWM Patches
 * [notitle](https://dwm.suckless.org/patches/notitle/)
