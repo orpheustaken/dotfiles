@@ -2,6 +2,8 @@ runtime! archlinux.vim
 
 syntax on
 
+set viminfo=""
+
 set nocompatible                                        " really don't know what this line does, but a lot of folks were using it back in 2008
 filetype on                                             " identify the file extension
 
