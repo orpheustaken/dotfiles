@@ -1,3 +1,4 @@
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -8,13 +9,16 @@
 source ~/Scripts/git-prompt.sh            # Call git integration script
 GIT_PS1_SHOWDIRTYSTATE='y'                # Show branch status
 
-# __git_ps1 accepts 0 or 1 arguments (i.e., format string): $(__git_ps1 " | %s")
-PS1='\[\033[01;90m\]\w\[\033[00m\]$(__git_ps1 " | %s")\n> '
+#  __git_ps1 accepts 0 or 1 arguments (i.e., format string): $(__git_ps1 " | %s")
+PS1='\[\033[01;90m\]\w\[\033[00m\]$(__git_ps1 " | %s")\n '
 
 ## History Settings
 HISTCONTROL=ignoredups:ignorespace
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+## Disable less history file
+export LESSHISTFILE=/dev/null
 
 ## Binds
 bind 'set completion-ignore-case on'      # Case-insensitive tab-completion
@@ -28,7 +32,11 @@ bind '"\eOB": history-search-forward'
 alias ls='ls --color=auto'
 alias lh='ls -d .*'                       # Show only hidden files
 
-alias up='doas pacman -Syu'               # Managing pacman
-alias ins='doas pacman -S'
-alias rem='doas pacman -Rcns'
+alias up='sudo pacman -Syu'               # Managing pacman
+alias ins='sudo pacman -S'
+alias rem='sudo pacman -Rcns'
+
+alias fuck='/home/user/Scripts/fuck_gnome_autostart'
+
+alias syncmirrors='sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
