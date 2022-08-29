@@ -1,3 +1,5 @@
+runtime! archlinux.vim
+
 syntax on
 
 set nocompatible                                        " really don't know what this line does, but a lot of folks were using it back in 2008
@@ -21,38 +23,38 @@ set ignorecase
 set smartcase                                           " case sensitive only when searching with capital letter
 
 set showmatch                                           " show matching bracket
-set showtabline=2                                       " show tabline even when there's only one file
+" set showtabline=2                                       " show tabline even when there's only one file
 
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=/home/user/.vim/undodir
 set undofile
 
 set scrolloff=15
 set sidescrolloff=15
 set updatetime=100
 
-set list
+" set list                                                " show end of line
 set wildmenu                                            " increment :e to search and open a file
 " set ttyfast                                             " smoothness
 
-set cul                                                 " highlight current line
-hi cursorline term=none cterm=none ctermbg=234
+" set cul                                                 " highlight current line
+" hi cursorline term=none cterm=none ctermbg=234
 
-packadd! onedark
+packadd! nord
 syntax enable
-colorscheme onedark
+colorscheme nord
 hi! Normal ctermbg=none
 
 nnoremap <C-j> :tabprevious<CR>
 nnoremap <C-k> :tabnext<CR>
 nnoremap <C-t> :tabnew<CR>
 
-autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
-autocmd VimEnter * imap <F3> <Esc>:NERDTreeToggle<CR>a
-let NERDTreeQuitOnOpen=1
-let NERDTreeWinSize=35
-let NERDTreeShowHidden=1
+" autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
+" autocmd VimEnter * imap <F3> <Esc>:NERDTreeToggle<CR>a
+" let NERDTreeQuitOnOpen=1
+" let NERDTreeWinSize=35
+" let NERDTreeShowHidden=1
 
 let g:polyglot_disabled = ['autoindent']
 let g:polyglot_disabled = ['sensible']
