@@ -36,7 +36,7 @@ alias up='sudo pacman -Syu'               # Managing pacman
 alias ins='sudo pacman -S'
 alias rem='sudo pacman -Rcns'
 
+## Scripts
 alias fuck='/home/user/Scripts/fuck_gnome_autostart'
-
-alias syncmirrors='sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+alias syncmirrors='/home/user/Scripts/syncmirrors'
 
