@@ -13,6 +13,17 @@ sudo reflector \
 
 printf '\n'
 
-echo 'Done.'
 echo 'New mirrorlist saved in /etc/pacman.d/mirrorlist.'
+
+printf '\n'
+
+echo 'Synchronizing packages, refreshing database and updating packages...'
+
+printf '\n'
+
+sudo pacman -Syyu --noconfirm
+
+printf '\n'
+
+echo 'Done.'
 
