@@ -41,4 +41,5 @@ alias fuck='/home/user/Scripts/fuck_gnome_autostart'
 alias syncmirrors='/home/user/Scripts/syncmirrors'
 alias updaterepos='/home/user/Scripts/updaterepos'
 alias clearsys='/home/user/Scripts/clearsys'
+alias updatetoolbox='/home/user/Scripts/updatetoolbox'
 
