@@ -43,9 +43,9 @@ set wildmenu                                            " increment :e to search
 " set cul                                                 " highlight current line
 " hi cursorline term=none cterm=none ctermbg=234
 
-packadd! nord
+packadd! onedark
 syntax enable
-colorscheme nord
+colorscheme onedark
 hi! Normal ctermbg=none
 
 nnoremap <C-j> :tabprevious<CR>
