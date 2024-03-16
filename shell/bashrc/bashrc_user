@@ -37,9 +37,8 @@ alias ins='sudo pacman -S'
 alias rem='sudo pacman -Rcns'
 
 ## Scripts
-alias fuck='/home/user/Scripts/fuck_gnome_autostart'
-alias syncmirrors='/home/user/Scripts/syncmirrors'
-alias updaterepos='/home/user/Scripts/updaterepos'
-alias clearsys='/home/user/Scripts/clearsys'
-alias updatetoolbox='/home/user/Scripts/updatetoolbox'
+alias syncmirrors='/home/user/Scripts/sync-mirrors.sh'
+alias updaterepos='/home/user/Scripts/update-repos.sh'
+alias clearsys='/home/user/Scripts/clear-sys.sh'
+alias updatetoolbox='/home/user/Scripts/update-toolbox.sh'
 

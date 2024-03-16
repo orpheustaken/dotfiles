@@ -2,11 +2,11 @@
 
 printf '\n'
 
-echo 'Running git pull in all cloned repos at ~/Projects/Git...'
+echo 'Running git pull in all cloned repos at ~/Projects...'
 
 printf '\n'
 
-cd ~/Projects/Git
+cd ~/Projects
 ls | xargs -I{} git -C {} pull
 
 printf '\n'
