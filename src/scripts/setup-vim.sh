@@ -23,6 +23,6 @@ mv onedark.vim/ onedark/
 
 cd $HOME
 
-cp $HOME/Projects/dotfiles/vim/vimrc .
+cp $HOME/Projects/dotfiles/src/vim/vimrc .
 mv vimrc .vimrc
 
